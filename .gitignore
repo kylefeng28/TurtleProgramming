@@ -13,3 +13,10 @@ bower_components
 # Sass
 .sass-cache
 *.css.map
+
+# Generated files
+views/index.html
+views/iframe-sandbox.html
+public/src/turtle.js
+public/src/main.js
+.vercel

@@ -6,10 +6,7 @@ const models = {};
 
 // Setup Mongoose and connect to MongoDB
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise; // Use ES6 Promises
-mongoose.connect(config.mongoURI, {
-	useMongoClient: true
-});
+mongoose.connect(config.mongoURI);
 
 fs
 	.readdirSync(__dirname)
