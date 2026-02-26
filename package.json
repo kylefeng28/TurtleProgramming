@@ -14,14 +14,10 @@
   "scripts": {
     "dev": "concurrently \"npm:watch:*\" \"npm:server\"",
     "server": "nodemon index.js",
-    "watch:babel": "babel --watch public/src/*.es6 --out-dir=public/src",
     "watch:pug": "pug --watch --pretty views/*.pug",
-    "build": "babel public/src/*.es6 --out-dir=public/src",
     "start": "node index.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.26.4",
-    "@babel/preset-env": "^7.26.0",
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.9",
     "pug-cli": "^1.0.0-alpha6"

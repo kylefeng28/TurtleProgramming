@@ -782,3 +782,7 @@ function logText(str) {
 /* Ideas
  * Turing tarpit like brainf?
  */
+
+// Export to the iframe's global namespace so that main window can access them
+window.t = t;
+window.proxy = proxy;
